@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="CVLACLibPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.entities.Revista</class>
+    <class>com.entities.TrabajoInvestigacion</class>
+    <class>com.entities.NivelFormacion</class>
+    <class>com.entities.Ponencia</class>
+    <class>com.entities.Articulo</class>
+    <class>com.entities.LibroAutores</class>
+    <class>com.entities.Libro</class>
+    <class>com.entities.ArticuloAutor</class>
+    <class>com.entities.Usuario</class>
+    <class>com.entities.GurpoInvestigacion</class>
+    <class>com.entities.PonenciaAutor</class>
+    <class>com.entities.Editorial</class>
+    <class>com.entities.Evento</class>
+    <class>com.entities.Investigador</class>
+    <class>com.entities.InvestigadorTrabajoInvestigacion</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cvlac?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>
